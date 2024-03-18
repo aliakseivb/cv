@@ -43,6 +43,28 @@ html {
   position: relative;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 50px;
+}
+.logo img {
+  width: 100%;
+}
+
+.portfolio {
+  text-decoration: none;
+  font-family: RobotoBold, sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.portfolio:hover {
+  color: #885454;
+}
 
 .nav {
   display: flex;
@@ -61,13 +83,11 @@ html {
   font-size: 22px;
   color: #30331c;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
   transition: .2s;
 }
 
 .item:hover {
   color: #ffffff;
-  border-bottom-color: #ffffff;
 }
 
 .main {
