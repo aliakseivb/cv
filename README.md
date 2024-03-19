@@ -49,6 +49,6 @@ const firstResume = new Rsschool('Resume text')
 ## __Languages__
 - Belarusian - fluent
 - Russian - fluent
-- English - A2
+- English - B1
 - Polish - I can speak and understand
 - Ukrainian - I can understand
