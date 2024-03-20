@@ -5,26 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./assets/style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/adaptive.css">
   <title>cv</title>
 </head>
-<body>
+<body class="body">
+<div class="back"></div>
 <header class="header">
   <div class="container">
     <div class="logo">
       <img src="./assets/images/cv.png" alt="Logo">
     </div>
     <a class="portfolio" href="https://aliakseivb.github.io/portfolio-ng/" target="_blank">My portfolio</a>
-
-    <ul class="nav">
-      <li class="menu-item"><a href="#contacts" class="item">Contacts</a></li>
-      <li class="menu-item"><a href="#about" class="item">About me</a></li>
-      <li class="menu-item"><a href="#skills" class="item">Skills</a></li>
-      <li class="menu-item"><a href="#code" class="item">Code example</a></li>
-      <li class="menu-item"><a href="#educ" class="item">Education</a></li>
-      <li class="menu-item"><a href="#language" class="item">Languages</a></li>
-    </ul>
+    <div class="navigation">
+      <ul class="nav">
+        <li class="menu-item"><a href="#contacts" class="item">Contacts</a></li>
+        <li class="menu-item"><a href="#about" class="item">About me</a></li>
+        <li class="menu-item"><a href="#skills" class="item">Skills</a></li>
+        <li class="menu-item"><a href="#code" class="item">Code example</a></li>
+        <li class="menu-item"><a href="#educ" class="item">Education</a></li>
+        <li class="menu-item"><a href="#language" class="item">Languages</a></li>
+      </ul>
+      <div class="close"></div>
+    </div>
+    <div class="burger">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#4c4c4c">
+        <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+      </svg>
+    </div>
   </div>
 </header>
 <main class="main">
@@ -72,9 +82,10 @@
         <div class="text">
           <ul class="desk">
             <li>JavaScript</li>
-            <li>HTML/CSS(SCSS)</li>
+            <li>HTML / CSS(SCSS/LESS)</li>
             <li>Angular</li>
             <li>TS</li>
+            <li>Webpack / Gulp / Grunt</li>
             <li>GIT</li>
             <li>Bootstrap</li>
             <li>JQuery</li>
@@ -86,18 +97,17 @@
         <h2>Code example</h2>
         <pre class="code">
 
-    class MyResume {
-        constructor(text) {
-            this.text = text;
-            this.countResume = 0;
-        }
-        upResume() {
-            this.countResume += 1;
-        }
-    }
-
-    const resume = new MyResume('Resume text');
-    resume.upResume('New resume text');
+class MyResume {
+  constructor(text) {
+    this.text = text;
+    this.countResume = 0;
+  }
+  upResume() {
+  this.countResume += 1;
+  }
+}
+const resume = new MyResume('Resume text');
+resume.upResume('New resume text');
         </pre>
       </div>
       <div class="section" id="educ">
@@ -145,5 +155,7 @@
     <a href="https://t.me/aliakseivb">aliakseivb</a>
   </div>
 </footer>
+
+<script src="./assets/scripts/script.js"></script>
 </body>
 </html>
