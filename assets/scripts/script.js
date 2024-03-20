@@ -5,6 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('.body');
   const back = document.querySelector('.back');
   const header = document.querySelector('.header');
+  const year = document.querySelector('.year');
+
+  //todo актуальный год
+  year.innerText = new Date().getFullYear();
 
   //todo анимация хедера
   window.onscroll = () => {
@@ -19,14 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', (e) => {
     menu.classList.add('open');
     body.classList.add('hidden');
-    backgr.classList.add('show');
+    back.classList.add('show');
   });
 
   //todo закрытие меню
   closeBtn.addEventListener('click', () => {
     menu.classList.remove('open');
     body.classList.remove('hidden');
-    backgr.classList.remove('show');
+    back.classList.remove('show');
   });
 
   menu.addEventListener('click', (e) => {
@@ -37,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.target.matches('a.item')) {
         menu.classList.remove('open');
         body.classList.remove('hidden');
-        backgr.classList.remove('show');
+        back.classList.remove('show');
       }
     }
   });
