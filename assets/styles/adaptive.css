@@ -25,6 +25,9 @@
     gap: 20px 20px;
     padding: 20px 0;
   }
+  .code {
+    font-size: 1.1vb;
+  }
 
   .footer .container {
     padding: 30px 10px;
@@ -53,6 +56,11 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .code {
+    font-size: 0.85vb;
+  }
+}
 @media screen and (max-width: 900px) {
   .main-header {
     padding: 20px 40px;
@@ -236,7 +244,7 @@
   }
 
   .code {
-    font-size: 0.8vb;
+    font-size: 0.7vb;
   }
 
   .footer .container {
