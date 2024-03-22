@@ -26,7 +26,7 @@
     padding: 20px 0;
   }
   .code {
-    font-size: 1.1vb;
+    font-size: 1.9vb;
   }
 
   .footer .container {
@@ -52,15 +52,10 @@
   }
 
   .code {
-    font-size: 1vb;
+    font-size: 1.9vb;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .code {
-    font-size: 0.85vb;
-  }
-}
 @media screen and (max-width: 900px) {
   .main-header {
     padding: 20px 40px;
@@ -215,13 +210,13 @@
     text-align: center;
   }
   .code {
-    font-size: 0.9vb;
+    font-size: 1.8vb;
   }
 }
 
 @media screen and (max-width: 400px) {
   .item {
-    font-size: 14px;
+    font-size: 8px;
   }
 
   .main-header {
@@ -244,11 +239,17 @@
   }
 
   .code {
-    font-size: 0.7vb;
+    font-size: 1.4vb;
   }
 
   .footer .container {
     padding: 10px 10px;
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .code {
+    font-size: 1.2vb;
   }
 }
