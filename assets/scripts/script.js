@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   const menu = document.querySelector('.navigation');
   const burger = document.querySelector('.burger');
   const closeBtn = document.querySelector('.close');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   year.innerText = new Date().getFullYear();
 
   //todo анимация хедера
-  window.onscroll = () => {
+  window.onscroll = function () {
     if (window.scrollY > 2) {
       header.classList.add('shadow');
     } else {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   //todo открытие меню
-  burger.addEventListener('click', (e) => {
+  burger.addEventListener('click', () => {
     menu.classList.add('open');
     body.classList.add('hidden');
     back.classList.add('show');

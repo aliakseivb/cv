@@ -138,10 +138,27 @@ html {
 
 .burger {
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
   width: 40px;
-  height: 40px;
   cursor: pointer;
   align-items: center;
+}
+
+.line {
+  width: 100%;
+  height: 5px;
+  min-height: 5px;
+  border-radius: 5px;
+  background: #4c4c4c;
+}
+
+.line:nth-child(2){
+  margin: 7px 0;
+}
+
+.burger:hover .line {
+  background: #885454;
 }
 
 .main {
