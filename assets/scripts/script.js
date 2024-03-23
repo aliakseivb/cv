@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const back = document.querySelector('.back');
   const header = document.querySelector('.header');
   const year = document.querySelector('.year');
-
+  const sectionElements = document.querySelectorAll('.section')
   //todo актуальный год
   year.innerText = new Date().getFullYear();
 
@@ -38,11 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.currentTarget.contains(e.target) && !e.target.classList.contains('item')) {
         return false
       }
-      if (e.target.matches('a.item')) {
+      if (e.target.matches('span.item')) {
         menu.classList.remove('open');
         body.classList.remove('hidden');
         back.classList.remove('show');
+        scrollToElem(e.target.dataset['scroll'])
       }
     }
   });
+  function scrollToElem(link) {
+    const toScrollElem = Array.from(sectionElements).find(elem => elem.id === link);
+    toScrollElem.scrollIntoView({ block: "center", behavior: "smooth" })
+  }
 });
