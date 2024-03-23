@@ -42,7 +42,11 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.remove('open');
         body.classList.remove('hidden');
         back.classList.remove('show');
-        scrollToElem(e.target.dataset['scroll'])
+        scrollToElem(e.target.dataset['scroll']);
+      }
+    } else {
+      if (e.target.matches('span.item')) {
+        scrollToElem(e.target.dataset['scroll']);
       }
     }
   });

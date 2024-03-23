@@ -115,6 +115,7 @@ html {
   color: #30331c;
   text-decoration: none;
   transition: .2s;
+  cursor: pointer;
 }
 
 .item:hover {
